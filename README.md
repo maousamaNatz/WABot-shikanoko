@@ -1,8 +1,6 @@
-
-<div style=" overflow: hidden; width: 100%; aspect-ratio: 16 / 5;">
-    <img src="Nokotan.jpeg" alt="Logo" style="max-width: 100%; height: 100%; object-fit:cover;">
-</div>
-
+<p align="center" >
+  <img src="Nokotan.jpeg" width:100 />
+</p>
 # Shika Senbei - WhatsApp Chatbot 🍘
 
 Shika Senbei adalah chatbot WhatsApp yang dirancang untuk memberikan pengalaman interaksi yang menyenangkan dan bermanfaat bagi pengguna. Dengan berbagai fitur canggih dan integrasi yang mudah, Shika Senbei siap membantu dalam berbagai kebutuhan komunikasi di WhatsApp.
