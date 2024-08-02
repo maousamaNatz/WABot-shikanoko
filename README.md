@@ -1,6 +1,7 @@
 
-![Logo](Nokotan.jpeg)
-
+<div style="display: flex; justify-content: center; align-items: center; overflow: hidden; width: 100%; aspect-ratio: 16 / 6;">
+    <img src="Nokotan.jpeg" alt="Logo" style="max-width: 100%; height: auto;">
+</div>
 
 # Shika Senbei - WhatsApp Chatbot 🍘
 
