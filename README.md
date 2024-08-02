@@ -1,9 +1,9 @@
 <p align="center" >
   <img src="Nokotan.jpeg" width:100 />
 </p>
-# Shika Senbei - WhatsApp Chatbot 🍘
+# shikanoko - WhatsApp Chatbot 🍘
 
-Shika Senbei adalah chatbot WhatsApp yang dirancang untuk memberikan pengalaman interaksi yang menyenangkan dan bermanfaat bagi pengguna. Dengan berbagai fitur canggih dan integrasi yang mudah, Shika Senbei siap membantu dalam berbagai kebutuhan komunikasi di WhatsApp.
+shikanoko adalah chatbot WhatsApp yang dirancang untuk memberikan pengalaman interaksi yang menyenangkan dan bermanfaat bagi pengguna. Dengan berbagai fitur canggih dan integrasi yang mudah, Shika Senbei siap membantu dalam berbagai kebutuhan komunikasi di WhatsApp.
 
 ## 🚀 About Me
 Shika Senbei adalah chatbot yang dikembangkan menggunakan `wppconnect` untuk memaksimalkan interaksi di WhatsApp. Bot ini mampu melakukan berbagai tugas mulai dari mengirim pesan otomatis, menandai anggota grup, hingga menyediakan informasi terperinci sesuai perintah pengguna.
