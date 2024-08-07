@@ -1,0 +1,29 @@
+{
+  "features": {
+    "sticker": "Perintah ./sticker digunakan untuk membuat stiker dari gambar yang dikirim.",
+    "everyone": "Perintah @everyone digunakan untuk menandai semua anggota grup.",
+    "user": "Perintah !user digunakan untuk mencari daftar user level di dalam database.",
+    "download": "Perintah ./download digunakan untuk mengunduh media dari link yang diberikan.",
+    "more-info": "Perintah ./more-info memberikan informasi tambahan tentang bot."
+  },
+  "owner": {
+    "name": "Natz",
+    "contact": "nat0zxn99@gmail.com",
+    "role": "Developer & owner",
+    "about": "Saya adalah developer dari bot ini. Jika ada bug atau masalah, silakan hubungi saya."
+  },
+  "bot": {
+    "name": "Shikanoko",
+    "version": "1.0.0",
+    "language": "JavaScript",
+    "framework": "Node.js",
+    "mainFeatures": [
+      "Unduhan",
+      "Permainan",
+      "Manajemen Grup",
+      "Pencarian Informasi"
+    ],
+    "since": "2023",
+    "about": "Shikanoko adalah bot multifungsi yang dirancang untuk membantu pengguna dalam berbagai tugas dan hiburan."
+  }
+}

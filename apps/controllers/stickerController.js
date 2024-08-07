@@ -5,6 +5,12 @@ const { stickerStoragePath } = require('../config/Mpath');
 const { decryptMedia } = require('@open-wa/wa-decrypt');
 // const { MessageType } = require('@wppconnect-team/wppconnect');
 
+/**
+ * Menangani perintah pembuatan stiker
+ * @param {Object} client - Objek klien WhatsApp
+ * @param {Object} message - Objek pesan
+ * @returns {Promise<void>}
+ */
 const handleStickerCommand = async (client, message) => {
   try {
     console.log('Client object in handleStickerCommand:', client);

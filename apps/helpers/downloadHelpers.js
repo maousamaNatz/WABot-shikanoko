@@ -8,7 +8,12 @@ const instagramDl = require("@sasmeee/igdl");
 const { TwitterDL } = require("twitter-downloader");
 const { downloadTrack2 } = require("@nechlophomeriaa/spotifydl");
 const { mediaStoragePath } = require("../config/Mpath");
+const logMessages = require('../config/log.json');
 
+/**
+ * Memastikan direktori ada, jika tidak, membuatnya.
+ * @param {string} filePath - Path file yang akan diperiksa direktorinya.
+ */
 const ensureDirectoryExists = (filePath) => {
   const dirname = path.dirname(filePath);
   if (!fs.existsSync(dirname)) {
@@ -16,9 +21,15 @@ const ensureDirectoryExists = (filePath) => {
   }
 };
 
+/**
+ * Mengunduh media dari URL yang diberikan.
+ * @param {string} url - URL media yang akan diunduh.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika URL tidak valid atau terjadi kesalahan saat mengunduh.
+ */
 const downloadMedia = async (url) => {
   if (!url || !url.includes("http")) {
-    throw new Error("Please specify a media URL...");
+    throw new Error(logMessages.errors.paymentError);
   }
   url = extractUrlFromString(url);
   await deleteTempMediaFiles();
@@ -46,11 +57,17 @@ const downloadMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media dari Instagram.
+ * @param {string} url - URL Instagram.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadInstagramMedia = async (url) => {
   try {
     const dataList = await instagramDl(url);
     if (!dataList || !dataList[0]) {
-      throw new Error("Error: Invalid media URL...");
+      throw new Error(logMessages.errors.paymentError);
     }
     const mediaURL = dataList[0].download_link;
     return await downloadDirectMedia(mediaURL, getFileName(mediaURL, "jpg"));
@@ -59,6 +76,12 @@ const downloadInstagramMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh album Spotify.
+ * @param {string} url - URL album Spotify.
+ * @returns {Promise<string>} Path folder album yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadSpotifyAlbum = async (url) => {
   try {
     const albumTracks = await downloadAlbum(url);
@@ -85,6 +108,12 @@ const downloadSpotifyAlbum = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media dari TikTok.
+ * @param {string} url - URL TikTok.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadTikTokMedia = async (url) => {
   try {
     const result = await Tiktok.Downloader(url, { version: "v2" });
@@ -95,6 +124,12 @@ const downloadTikTokMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media dari Twitter.
+ * @param {string} url - URL Twitter.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadTwitterMedia = async (url) => {
   try {
     const result = await TwitterDL(url);
@@ -107,6 +142,12 @@ const downloadTwitterMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media dari YouTube.
+ * @param {string} url - URL YouTube.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh atau tidak ada format yang sesuai.
+ */
 const downloadYoutubeMedia = async (url) => {
   try {
     const info = await ytdl.getInfo(url);
@@ -141,6 +182,12 @@ const downloadYoutubeMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media dari Spotify.
+ * @param {string} url - URL track Spotify.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadSpotifyMedia = async (url) => {
   try {
     const downTrack = await downloadTrack2(url);
@@ -158,6 +205,13 @@ const downloadSpotifyMedia = async (url) => {
   }
 };
 
+/**
+ * Mengunduh media langsung dari URL.
+ * @param {string} url - URL media.
+ * @param {string} fileName - Nama file untuk menyimpan media.
+ * @returns {Promise<string>} Path file media yang diunduh.
+ * @throws {Error} Jika terjadi kesalahan saat mengunduh.
+ */
 const downloadDirectMedia = async (url, fileName) => {
   try {
     const response = await axios({
@@ -172,6 +226,12 @@ const downloadDirectMedia = async (url, fileName) => {
   }
 };
 
+/**
+ * Menyimpan stream ke file.
+ * @param {ReadableStream} stream - Stream yang akan disimpan.
+ * @param {string} fileName - Nama file untuk menyimpan stream.
+ * @returns {Promise<string>} Path file yang disimpan.
+ */
 const saveStreamToFile = (stream, fileName) => {
   ensureDirectoryExists(fileName);
   const mediaWriter = fs.createWriteStream(fileName);
@@ -189,18 +249,34 @@ const saveStreamToFile = (stream, fileName) => {
   });
 };
 
+/**
+ * Menghasilkan nama file unik berdasarkan URL dan ekstensi.
+ * @param {string} url - URL media.
+ * @param {string} extension - Ekstensi file.
+ * @returns {string} Nama file yang dihasilkan.
+ */
 const getFileName = (url, extension) => {
   const hash = crypto.createHash("md5").update(url).digest("hex");
   const datetime = new Date().toISOString().replace(/[:.]/g, "-");
   return path.join(mediaStoragePath, `${hash}_${datetime}.${extension}`);
 };
 
+/**
+ * Mengekstrak URL dari string.
+ * @param {string} string - String yang mungkin mengandung URL.
+ * @returns {string|null} URL yang diekstrak atau null jika tidak ditemukan.
+ */
 const extractUrlFromString = (string) => {
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   const matchedUrls = string.match(urlRegex);
   return matchedUrls ? matchedUrls[0] : null;
 };
 
+/**
+ * Mendapatkan panjang konten dari URL.
+ * @param {string} url - URL untuk diperiksa panjang kontennya.
+ * @returns {Promise<number|null>} Panjang konten atau null jika gagal.
+ */
 const getContentLength = async (url) => {
   try {
     const response = await axios.head(url);
@@ -211,6 +287,9 @@ const getContentLength = async (url) => {
   }
 };
 
+/**
+ * Menghapus file media sementara yang lebih tua dari batas waktu tertentu.
+ */
 const deleteTempMediaFiles = async () => {
   const mediaPath = mediaStoragePath;
   const now = Date.now();

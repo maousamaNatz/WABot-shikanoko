@@ -1,6 +1,7 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const wikipedia = require("wikipedia"); // Perlu ditambahkan untuk pencarian Wikipedia
+const logMessages = require('../config/log.json');
 
 /**
  * Fungsi untuk mencari Wikipedia.
@@ -20,7 +21,7 @@ async function searchWikipedia(query, lang = "en") {
       url: page.fullurl,
     };
   } catch (error) {
-    throw new Error(`Kesalahan saat mencari di Wikipedia: ${error.message}`);
+    throw new Error(logMessages.errors.wikiError);
   }
 }
 
@@ -157,98 +158,6 @@ function quotesAnime() {
 }
 
 /**
- * Fungsi untuk mengunduh video menggunakan aiovideodl.
- * @param {string} link - URL video yang akan diunduh.
- * @returns {Promise<Object>} Objek yang berisi informasi video yang diunduh.
- * @throws Akan menimbulkan kesalahan jika pengunduhan video gagal.
- */
-function aiovideodl(link) {
-  return new Promise((resolve, reject) => {
-    axios({
-      url: "https://aiovideodl.ml/",
-      method: "GET",
-      headers: {
-        "user-agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        cookie:
-          "PHPSESSID=69ce1f8034b1567b99297eee2396c308; _ga=GA1.2.1360894709.1632723147; _gid=GA1.2.1782417082.1635161653",
-      },
-    })
-      .then((src) => {
-        let a = cheerio.load(src.data);
-        let token = a("#token").attr("value");
-        axios({
-          url: "https://aiovideodl.ml/wp-json/aio-dl/video-data/",
-          method: "POST",
-          headers: {
-            "user-agent":
-              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-            cookie:
-              "PHPSESSID=69ce1f8034b1567b99297eee2396c308; _ga=GA1.2.1360894709.1632723147; _gid=GA1.2.1782417082.1635161653",
-          },
-          data: new URLSearchParams(
-            Object.entries({ url: link, token: token })
-          ),
-        })
-          .then(({ data }) => {
-            resolve(data);
-          })
-          .catch(reject);
-      })
-      .catch(reject);
-  });
-}
-
-/**
- * Fungsi untuk scrapper artikel umma.
- * @param {string} url - URL artikel yang akan di-scrape.
- * @returns {Promise<Object>} Objek yang berisi informasi artikel.
- * @throws Akan menimbulkan kesalahan jika scrapping artikel gagal.
- */
-function umma(url) {
-  return new Promise((resolve, reject) => {
-    axios
-      .get(url)
-      .then((res) => {
-        let $ = cheerio.load(res.data);
-        let image = [];
-        $("#article-content > div")
-          .find("img")
-          .each(function (a, b) {
-            image.push($(b).attr("src"));
-          });
-        let hasil = {
-          title: $("#wrap > div.content-container.font-6-16 > h1")
-            .text()
-            .trim(),
-          author: {
-            name: $(
-              "#wrap > div.content-container.font-6-16 > div.content-top > div > div.user-ame.font-6-16.fw"
-            )
-              .text()
-              .trim(),
-            profilePic: $(
-              "#wrap > div.content-container.font-6-16 > div.content-top > div > div.profile-photo > img.photo"
-            ).attr("src"),
-          },
-          caption: $("#article-content > div > p").text().trim(),
-          media: $("#article-content > div > iframe").attr("src")
-            ? [$("#article-content > div > iframe").attr("src")]
-            : image,
-          type: $("#article-content > div > iframe").attr("src")
-            ? "video"
-            : "image",
-          like: $(
-            "#wrap > div.bottom-btns > div > button:nth-child(1) > div.text.font-6-12"
-          ).text(),
-        };
-        resolve(hasil);
-      })
-      .catch(reject);
-  });
-}
-
-/**
  * Fungsi untuk mencari ringtone.
  * @param {string} title - Kata kunci pencarian.
  * @returns {Promise<Array<Object>>} Array objek yang berisi informasi ringtone.
@@ -306,8 +215,6 @@ module.exports = {
   wallpaper,
   wikimedia,
   quotesAnime,
-  aiovideodl,
-  umma,
   ringtone,
   styletext,
   searchWikipedia,

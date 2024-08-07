@@ -4,7 +4,10 @@ const { quotesAnime } = require('./scrapper');
 
 const dailyQuoteFilePath = path.join(__dirname, 'dailyQuote.json');
 
-// Load daily quote from file
+/**
+ * Memuat kutipan harian dari file
+ * @returns {Object} Objek kutipan harian atau objek kosong jika file tidak ada
+ */
 const loadDailyQuote = () => {
   if (fs.existsSync(dailyQuoteFilePath)) {
     const rawData = fs.readFileSync(dailyQuoteFilePath);
@@ -13,13 +16,19 @@ const loadDailyQuote = () => {
   return {};
 };
 
-// Save daily quote to file
+/**
+ * Menyimpan kutipan harian ke file
+ * @param {Object} quote - Objek kutipan harian untuk disimpan
+ */
 const saveDailyQuote = (quote) => {
   const data = JSON.stringify(quote);
   fs.writeFileSync(dailyQuoteFilePath, data);
 };
 
-// Get today's quote or fetch a new one
+/**
+ * Mendapatkan kutipan harian untuk hari ini atau mengambil yang baru jika belum ada
+ * @returns {Promise<Object>} Kutipan harian
+ */
 const getDailyQuote = async () => {
   const today = new Date().toISOString().split('T')[0];
   let dailyQuote = loadDailyQuote();

@@ -1,0 +1,35 @@
+{
+  "errors": {
+    "404": "Not Found",
+    "adminOnly": "anda tidak dapat menggunakan perintah ini. perintah ini hanya dapat digunakan oleh admin grup",
+    "user": "anda tidak dapat menggunakan perintah ini. perintah ini hanya dapat digunakan oleh user",
+    "dev": "anda tidak dapat menggunakan perintah ini. perintah ini hanya dapat digunakan oleh dev",
+    "admin": "anda tidak dapat menggunakan perintah ini. perintah ini hanya dapat digunakan oleh admin",
+    "superadmin": "anda tidak dapat menggunakan perintah ini. perintah ini hanya dapat digunakan oleh superadmin",
+    "500": "Internal Server Error",
+    "userNotFound": "User not found",
+    "accessDenied": "Access denied",
+    "paymentInvalid": "Jumlah pembayaran tidak valid.",
+    "paymentMethodInvalid": "Metode pembayaran tidak valid. Pilihan: bank, va, qris, dana",
+    "paymentError": "Terjadi kesalahan saat memproses pembayaran. Silakan coba lagi nanti.",
+    "danaIdNotRegistered": "Anda belum mendaftarkan DANA ID. Silakan daftar terlebih dahulu.",
+    "malError": "Maaf, terjadi kesalahan saat memproses permintaan Anda.",
+    "wikiError": "Terjadi kesalahan saat mencari di Wikipedia.",
+    "changelogNotAvailable": "Maaf, changelog tidak tersedia saat ini.",
+    "botInfoError": "Terjadi kesalahan saat mengambil informasi bot.",
+    "featureNotFound": "Fitur tidak ditemukan. Gunakan help diikuti dengan nama fitur untuk mendapatkan info lebih lanjut.",
+    "everyoneCommandError": "Terjadi kesalahan saat memanggil semua user.",
+    "onlyAdminCanUse": "Hanya admin grup yang dapat menggunakan perintah ini.",
+    "onlyDevCanUse": "Hanya dev yang dapat meminta daftar pengguna"
+  },
+  "success": {
+    "paymentSuccess": "Pembayaran berhasil",
+    "stickerCreated": "Sticker berhasil dibuat",
+    "downloadSuccess": "Download berhasil"
+  },
+  "info": {
+    "processingPayment": "Memproses pembayaran...",
+    "creatingSticker": "Membuat sticker...",
+    "downloadingMedia": "Mengunduh media..."
+  }
+}

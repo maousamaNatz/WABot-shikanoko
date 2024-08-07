@@ -1,0 +1,464 @@
+{
+    "tebakKata": [
+      {
+        "petunjuk": "Hewan berkaki empat yang menggonggong",
+        "jawaban": "Anjing"
+      },
+      { "petunjuk": "Buah berwarna kuning dan panjang", "jawaban": "Pisang" },
+      { "petunjuk": "Alat untuk menulis di papan tulis", "jawaban": "Kapur" },
+      { "petunjuk": "Minuman berwarna hitam dan pahit", "jawaban": "Kopi" },
+      {
+        "petunjuk": "Buah merah kecil dengan rasa asam",
+        "jawaban": "Strawberry"
+      },
+      { "petunjuk": "Alat untuk memotong kertas", "jawaban": "Gunting" },
+      { "petunjuk": "Hewan yang dikenal sebagai raja hutan", "jawaban": "Singa" },
+      { "petunjuk": "Alat musik dengan senar dan dipetik", "jawaban": "Gitar" },
+      {
+        "petunjuk": "Transportasi darat yang berjalan di rel",
+        "jawaban": "Kereta"
+      },
+      {
+        "petunjuk": "Buah tropis yang berduri dan berbau kuat",
+        "jawaban": "Durian"
+      },
+      { "petunjuk": "Hewan dengan belalai panjang", "jawaban": "Gajah" },
+      { "petunjuk": "Alat untuk menggoreng makanan", "jawaban": "Wajan" },
+      { "petunjuk": "Tempat untuk menonton film", "jawaban": "Bioskop" },
+      { "petunjuk": "Buah berkulit hijau dan berair", "jawaban": "Semangka" },
+      { "petunjuk": "Alat untuk mengecat dinding", "jawaban": "Kuas" },
+      { "petunjuk": "Benda yang digunakan untuk membaca", "jawaban": "Buku" },
+      { "petunjuk": "Hewan kecil yang suka menyedot darah", "jawaban": "Nyamuk" },
+      { "petunjuk": "Tempat untuk menabung uang", "jawaban": "Bank" },
+      { "petunjuk": "Buah yang sering dijadikan jus", "jawaban": "Jeruk" },
+      { "petunjuk": "Hewan yang bisa berubah warna", "jawaban": "Bunglon" },
+      { "petunjuk": "Transportasi udara yang besar", "jawaban": "Pesawat" },
+      { "petunjuk": "Alat untuk mengukur waktu", "jawaban": "Jam" },
+      {
+        "petunjuk": "Hewan yang bisa terbang dan menghasilkan madu",
+        "jawaban": "Lebah"
+      },
+      {
+        "petunjuk": "Tempat untuk berbelanja kebutuhan sehari-hari",
+        "jawaban": "Supermarket"
+      },
+      { "petunjuk": "Alat untuk menjahit pakaian", "jawaban": "Mesin Jahit" },
+      {
+        "petunjuk": "Hewan dengan cangkang keras dan berjalan lambat",
+        "jawaban": "Kura-kura"
+      },
+      {
+        "petunjuk": "Buah berwarna merah dengan banyak biji kecil",
+        "jawaban": "Delima"
+      },
+      {
+        "petunjuk": "Benda yang digunakan untuk menulis dengan tinta",
+        "jawaban": "Pulpen"
+      },
+      {
+        "petunjuk": "Tempat untuk bermain dan berenang",
+        "jawaban": "Kolam Renang"
+      },
+      {
+        "petunjuk": "Hewan yang hidup di air dan memiliki sirip",
+        "jawaban": "Ikan"
+      },
+      {
+        "petunjuk": "Alat musik yang dipukul dan terbuat dari kayu",
+        "jawaban": "Gamelan"
+      },
+      {
+        "petunjuk": "Buah berwarna kuning yang kaya akan vitamin C",
+        "jawaban": "Jeruk"
+      },
+      {
+        "petunjuk": "Transportasi yang berjalan di atas air",
+        "jawaban": "Kapal"
+      },
+      { "petunjuk": "Hewan yang suka makan wortel", "jawaban": "Kelinci" },
+      { "petunjuk": "Alat untuk membersihkan lantai", "jawaban": "Sapu" },
+      { "petunjuk": "Tempat untuk menginap sementara", "jawaban": "Hotel" },
+      {
+        "petunjuk": "Buah dengan biji di luar dan warna merah",
+        "jawaban": "Strawberry"
+      },
+      { "petunjuk": "Alat untuk mengeringkan rambut", "jawaban": "Hairdryer" },
+      {
+        "petunjuk": "Hewan yang bisa memanjat pohon dan makan pisang",
+        "jawaban": "Monyet"
+      },
+      {
+        "petunjuk": "Buah tropis dengan kulit berduri dan daging kuning",
+        "jawaban": "Durian"
+      }
+    ],
+    "ticTacToe": {
+      "instruksi": "Silakan pilih posisi (1-9): ...",
+      "contohGame": {
+        "posisi1": "X",
+        "posisi2": "O",
+        "posisi3": "",
+        "posisi4": "X",
+        "posisi5": "",
+        "posisi6": "O",
+        "posisi7": "",
+        "posisi8": "X",
+        "posisi9": ""
+      }
+    },
+    "mathGame": [
+      { "soal": "Berapakah hasil dari 5 + 7 x 2?", "jawaban": 19 },
+      { "soal": "Jika 3x + 5 = 20, berapakah nilai x?", "jawaban": 5 },
+      { "soal": "Berapa akar kuadrat dari 144?", "jawaban": 12 },
+      { "soal": "Berapakah hasil dari 15 - 7 + 4?", "jawaban": 12 },
+      { "soal": "Jika y - 3 = 10, berapakah nilai y?", "jawaban": 13 },
+      { "soal": "Berapa hasil dari 6 x 8?", "jawaban": 48 },
+      { "soal": "Jika 2a = 8, berapakah nilai a?", "jawaban": 4 },
+      { "soal": "Berapakah hasil dari 9 / 3?", "jawaban": 3 },
+      { "soal": "Jika b + 5 = 15, berapakah nilai b?", "jawaban": 10 },
+      { "soal": "Berapa hasil dari 7 x 7?", "jawaban": 49 },
+      { "soal": "Berapakah hasil dari 25 - 5?", "jawaban": 20 },
+      { "soal": "Jika c / 4 = 6, berapakah nilai c?", "jawaban": 24 },
+      { "soal": "Berapa hasil dari 100 / 5?", "jawaban": 20 },
+      { "soal": "Jika d x 3 = 21, berapakah nilai d?", "jawaban": 7 },
+      { "soal": "Berapakah hasil dari 8 + 12?", "jawaban": 20 },
+      { "soal": "Jika e - 9 = 1, berapakah nilai e?", "jawaban": 10 },
+      { "soal": "Berapa hasil dari 15 x 2?", "jawaban": 30 },
+      { "soal": "Jika f / 2 = 8, berapakah nilai f?", "jawaban": 16 },
+      { "soal": "Berapa hasil dari 60 / 4?", "jawaban": 15 },
+      { "soal": "Jika g + 7 = 20, berapakah nilai g?", "jawaban": 13 }
+    ],
+    "tebakLirik": [
+      { "lirik": "Garuda di dadaku...", "lanjutan": "Garuda kebanggaanku" },
+      { "lirik": "Rayuan pulau kelapa...", "lanjutan": "Nyiur melambai" },
+      {
+        "lirik": "Tanah airku tidak kulupakan...",
+        "lanjutan": "Kan terkenang selama hidupku"
+      },
+      {
+        "lirik": "Indonesia tanah air beta...",
+        "lanjutan": "Pusaka abadi nan jaya"
+      },
+      {
+        "lirik": "Bangun pemudi pemuda Indonesia...",
+        "lanjutan": "Tangan bajumu singsingkan untuk negara"
+      },
+      { "lirik": "Indonesia Raya...", "lanjutan": "Merdeka, merdeka" },
+      { "lirik": "Satu nusa, satu bangsa...", "lanjutan": "Satu bahasa kita" },
+      {
+        "lirik": "Hari merdeka, nusa dan bangsa...",
+        "lanjutan": "Hari lahirnya bangsa Indonesia"
+      },
+      {
+        "lirik": "Dari Sabang sampai Merauke...",
+        "lanjutan": "Berjajar pulau-pulau"
+      },
+      {
+        "lirik": "Selamatkanlah bangsa kami...",
+        "lanjutan": "Selamatkanlah jiwa kami"
+      },
+      {
+        "lirik": "Negeri kita, negeri yang kaya...",
+        "lanjutan": "Tanah subur dan makmur"
+      },
+      {
+        "lirik": "Di timur matahari mulai bercahaya...",
+        "lanjutan": "Langit cerah berseri"
+      },
+      {
+        "lirik": "Rasa sayange, rasa sayang sayange...",
+        "lanjutan": "Eeee lihat dari jauh rasa sayang sayange"
+      },
+      { "lirik": "Sorak sorak bergembira...", "lanjutan": "Bergembira semua" },
+      {
+        "lirik": "Padi menguning, segar membentang...",
+        "lanjutan": "Sayup terdegar suara merdu"
+      },
+      {
+        "lirik": "Tanah tumpah darahku yang mulia...",
+        "lanjutan": "Yang kupuja sepanjang masa"
+      },
+      {
+        "lirik": "Burung garuda, lambang negara...",
+        "lanjutan": "Pancasila dasar negara"
+      },
+      { "lirik": "Kibarkan benderamu...", "lanjutan": "Merdeka negeriku" },
+      { "lirik": "Bendera merah putih...", "lanjutan": "Bendera kita" },
+      { "lirik": "Selamat ulang tahun...", "lanjutan": "Kami ucapkan" }
+    ],
+    "tekaTeki": [
+      {
+        "pertanyaan": "Apa yang bisa dipegang tapi tidak bisa disentuh?",
+        "jawaban": "Janji"
+      },
+      {
+        "pertanyaan": "Semakin diambil, semakin besar. Apakah itu?",
+        "jawaban": "Lubang"
+      },
+      {
+        "pertanyaan": "Apa yang selalu jatuh tapi tidak pernah pecah?",
+        "jawaban": "Malam"
+      },
+      {
+        "pertanyaan": "Apa yang selalu datang tetapi tidak pernah tiba?",
+        "jawaban": "Besok"
+      },
+      { "pertanyaan": "Apa yang bisa melihat tanpa mata?", "jawaban": "Jendela" },
+      { "pertanyaan": "Apa yang bisa terbang tanpa sayap?", "jawaban": "Waktu" },
+      {
+        "pertanyaan": "Apa yang bisa berjalan tetapi tidak punya kaki?",
+        "jawaban": "Jam"
+      },
+      {
+        "pertanyaan": "Apa yang bisa mengalir tetapi tidak pernah kering?",
+        "jawaban": "Waktu"
+      },
+      {
+        "pertanyaan": "Apa yang selalu ada di depan tetapi tidak pernah terlihat?",
+        "jawaban": "Masa depan"
+      },
+      {
+        "pertanyaan": "Apa yang bisa berlari tetapi tidak pernah bergerak?",
+        "jawaban": "Air"
+      },
+      {
+        "pertanyaan": "Apa yang bisa berdiri tetapi tidak punya kaki?",
+        "jawaban": "Lilin"
+      },
+      {
+        "pertanyaan": "Apa yang bisa berbisik tetapi tidak punya mulut?",
+        "jawaban": "Angin"
+      },
+      {
+        "pertanyaan": "Apa yang bisa memantul tetapi tidak punya bola?",
+        "jawaban": "Suara"
+      },
+      {
+        "pertanyaan": "Apa yang bisa menembus tetapi tidak punya peluru?",
+        "jawaban": "Cahaya"
+      },
+      {
+        "pertanyaan": "Apa yang bisa mendengar tetapi tidak punya telinga?",
+        "jawaban": "Telepon"
+      },
+      {
+        "pertanyaan": "Apa yang bisa menghilang tetapi tidak punya bayangan?",
+        "jawaban": "Harapan"
+      },
+      {
+        "pertanyaan": "Apa yang bisa berbicara tetapi tidak punya mulut?",
+        "jawaban": "Radio"
+      },
+      {
+        "pertanyaan": "Apa yang bisa bergerak tetapi tidak punya otot?",
+        "jawaban": "Mesin"
+      },
+      {
+        "pertanyaan": "Apa yang bisa bersinar tetapi tidak punya lampu?",
+        "jawaban": "Matahari"
+      },
+      {
+        "pertanyaan": "Apa yang bisa melihat tetapi tidak punya mata?",
+        "jawaban": "Kamera"
+      }
+    ],
+    "asahOtak": [
+      { "soal": "Selesaikan urutan berikut: 2, 4, 8, 16, ...", "jawaban": 32 },
+      {
+        "soal": "Jika 5 kucing menangkap 5 tikus dalam 5 menit, berapa kucing yang dibutuhkan untuk menangkap 100 tikus dalam 100 menit?",
+        "jawaban": 5
+      },
+      { "soal": "Berapa banyak sisi yang dimiliki sebuah kubus?", "jawaban": 6 },
+      {
+        "soal": "Jika x + y = 10 dan x - y = 2, berapakah nilai x?",
+        "jawaban": 6
+      },
+      { "soal": "Selesaikan urutan berikut: 1, 1, 2, 3, 5, ...", "jawaban": 8 },
+      { "soal": "Jika 2x + 3 = 11, berapakah nilai x?", "jawaban": 4 },
+      { "soal": "Selesaikan urutan berikut: 5, 10, 20, 40, ...", "jawaban": 80 },
+      { "soal": "Jika y / 4 = 7, berapakah nilai y?", "jawaban": 28 },
+      { "soal": "Selesaikan urutan berikut: 3, 6, 9, 12, ...", "jawaban": 15 },
+      { "soal": "Jika a - 2 = 7, berapakah nilai a?", "jawaban": 9 },
+      { "soal": "Selesaikan urutan berikut: 2, 5, 10, 17, ...", "jawaban": 26 },
+      { "soal": "Jika b + 8 = 15, berapakah nilai b?", "jawaban": 7 },
+      { "soal": "Selesaikan urutan berikut: 4, 8, 12, 16, ...", "jawaban": 20 },
+      { "soal": "Jika c / 3 = 9, berapakah nilai c?", "jawaban": 27 },
+      { "soal": "Selesaikan urutan berikut: 1, 4, 9, 16, ...", "jawaban": 25 },
+      { "soal": "Jika d x 2 = 14, berapakah nilai d?", "jawaban": 7 },
+      { "soal": "Selesaikan urutan berikut: 2, 3, 5, 8, ...", "jawaban": 12 },
+      { "soal": "Jika e - 5 = 10, berapakah nilai e?", "jawaban": 15 },
+      { "soal": "Selesaikan urutan berikut: 1, 2, 6, 24, ...", "jawaban": 120 },
+      { "soal": "Jika f + 4 = 12, berapakah nilai f?", "jawaban": 8 }
+    ],
+    "family100": [
+      {
+        "pertanyaan": "Sebutkan 5 buah yang berwarna merah!",
+        "jawaban": ["Apel", "Strawberry", "Semangka", "Ceri", "Delima"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 profesi yang berhubungan dengan kesehatan!",
+        "jawaban": ["Dokter", "Perawat", "Apoteker", "Bidan", "Psikolog"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 alat musik tradisional Indonesia!",
+        "jawaban": ["Angklung", "Gamelan", "Sasando", "Kolintang", "Tifa"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 negara di Asia!",
+        "jawaban": ["Indonesia", "Malaysia", "Singapura", "Thailand", "Vietnam"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 hewan yang hidup di air!",
+        "jawaban": ["Ikan", "Lumba-lumba", "Paus", "Hiu", "Kuda Laut"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 bahasa yang digunakan di dunia!",
+        "jawaban": ["Inggris", "Mandarin", "Spanyol", "Indonesia", "Arab"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 warna dalam pelangi!",
+        "jawaban": ["Merah", "Jingga", "Kuning", "Hijau", "Biru"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 benua di dunia!",
+        "jawaban": ["Asia", "Afrika", "Eropa", "Australia", "Amerika"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 cabang olahraga di Olimpiade!",
+        "jawaban": ["Renang", "Atletik", "Sepak Bola", "Bulu Tangkis", "Tenis"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 alat dapur!",
+        "jawaban": ["Panci", "Wajan", "Pisau", "Sendok", "Garpu"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 jenis kendaraan!",
+        "jawaban": ["Mobil", "Motor", "Sepeda", "Bus", "Kereta Api"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 tempat wisata di Indonesia!",
+        "jawaban": ["Bali", "Raja Ampat", "Borobudur", "Bromo", "Komodo"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 nama bulan dalam setahun!",
+        "jawaban": ["Januari", "Februari", "Maret", "April", "Mei"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 buah yang berwarna kuning!",
+        "jawaban": ["Pisang", "Lemon", "Mangga", "Nanas", "Belimbing"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 jenis tanaman!",
+        "jawaban": ["Padi", "Jagung", "Gandum", "Kedelai", "Tebu"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 profesi yang berhubungan dengan pendidikan!",
+        "jawaban": [
+          "Guru",
+          "Dosen",
+          "Kepala Sekolah",
+          "Pengawas",
+          "Bimbingan Konseling"
+        ]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 hewan yang hidup di darat!",
+        "jawaban": ["Singa", "Gajah", "Kuda", "Kambing", "Harimau"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 jenis buah!",
+        "jawaban": ["Apel", "Pisang", "Jeruk", "Mangga", "Anggur"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 negara di Eropa!",
+        "jawaban": ["Inggris", "Jerman", "Perancis", "Italia", "Spanyol"]
+      },
+      {
+        "pertanyaan": "Sebutkan 5 warna!",
+        "jawaban": ["Merah", "Biru", "Hijau", "Kuning", "Hitam"]
+      }
+    ],
+    "siapakahAku": [
+      {
+        "deskripsi": "Aku bisa terbang tapi bukan burung, aku punya sayap tapi bukan serangga. Siapakah aku?",
+        "jawaban": "Pesawat"
+      },
+      {
+        "deskripsi": "Aku punya mata tapi tidak bisa melihat, aku punya jarum tapi tidak bisa menjahit. Siapakah aku?",
+        "jawaban": "Jam"
+      },
+      {
+        "deskripsi": "Aku selalu berjalan tapi tidak pernah sampai ke tujuan. Siapakah aku?",
+        "jawaban": "Jam dinding"
+      },
+      {
+        "deskripsi": "Aku bisa mengeluarkan air tetapi tidak bisa minum. Siapakah aku?",
+        "jawaban": "Keran"
+      },
+      {
+        "deskripsi": "Aku punya gigi tapi tidak bisa makan. Siapakah aku?",
+        "jawaban": "Sisir"
+      },
+      {
+        "deskripsi": "Aku bisa berputar tapi tidak pernah bergerak maju. Siapakah aku?",
+        "jawaban": "Kipas Angin"
+      },
+      {
+        "deskripsi": "Aku punya tangan tapi tidak bisa memegang. Siapakah aku?",
+        "jawaban": "Jam"
+      },
+      {
+        "deskripsi": "Aku bisa memotong tapi tidak punya pisau. Siapakah aku?",
+        "jawaban": "Gunting"
+      },
+      {
+        "deskripsi": "Aku bisa berenang tapi tidak punya kaki. Siapakah aku?",
+        "jawaban": "Ikan"
+      },
+      {
+        "deskripsi": "Aku bisa terbang tinggi tapi tidak punya sayap. Siapakah aku?",
+        "jawaban": "Balon"
+      },
+      {
+        "deskripsi": "Aku punya sayap tapi tidak bisa terbang. Siapakah aku?",
+        "jawaban": "Ayam"
+      },
+      {
+        "deskripsi": "Aku bisa menyala tapi tidak punya api. Siapakah aku?",
+        "jawaban": "Lampu"
+      },
+      {
+        "deskripsi": "Aku punya ekor tapi bukan hewan. Siapakah aku?",
+        "jawaban": "Komet"
+      },
+      {
+        "deskripsi": "Aku bisa bernyanyi tapi tidak punya suara. Siapakah aku?",
+        "jawaban": "Radio"
+      },
+      {
+        "deskripsi": "Aku bisa berlayar tapi tidak punya kapal. Siapakah aku?",
+        "jawaban": "Perahu Kertas"
+      },
+      {
+        "deskripsi": "Aku punya roda tapi tidak punya jalan. Siapakah aku?",
+        "jawaban": "Gasing"
+      },
+      {
+        "deskripsi": "Aku bisa menyelam tapi tidak punya kaki. Siapakah aku?",
+        "jawaban": "Kapal Selam"
+      },
+      {
+        "deskripsi": "Aku punya wajah tapi tidak punya kepala. Siapakah aku?",
+        "jawaban": "Cermin"
+      },
+      {
+        "deskripsi": "Aku bisa menangis tapi tidak punya mata. Siapakah aku?",
+        "jawaban": "Awan"
+      },
+      {
+        "deskripsi": "Aku bisa berlari tapi tidak punya kaki. Siapakah aku?",
+        "jawaban": "Air"
+      }
+    ]
+  }
+  

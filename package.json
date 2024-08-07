@@ -1,6 +1,6 @@
 {
   "name": "whatsapp-bot",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,6 @@
     "@sasmeee/igdl": "^1.0.0",
     "@tobyg74/tiktok-api-dl": "^1.1.9",
     "@wppconnect-team/wppconnect": "^1.32.4",
-    "ag-psd": "^20.2.3",
     "axios": "^1.7.2",
     "buffer": "^6.0.3",
     "canvas": "^2.11.2",
@@ -32,11 +31,11 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.10.3",
     "photoshop-script-api": "^1.0.4",
-    "psd": "^3.4.0",
     "sequelize": "^6.37.3",
     "sharp": "^0.33.4",
     "twitter-downloader": "^1.1.8",
     "wa-sticker-formatter": "^4.4.4",
+    "wikipedia": "^2.1.2",
     "xlsx": "^0.18.5",
     "ytdl-core": "^4.11.5"
   }

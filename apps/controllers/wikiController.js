@@ -1,5 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const logMessages = require('../config/log.json');
 
 const searchWikipedia = async (query, lang = 'id') => {
   try {
@@ -34,7 +35,7 @@ const searchWikipedia = async (query, lang = 'id') => {
     };
   } catch (error) {
     console.error('Error searching Wikipedia:', error);
-    throw new Error('Terjadi kesalahan saat mencari di Wikipedia.');
+    throw new Error(logMessages.errors.wikiError);
   }
 };
 

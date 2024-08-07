@@ -2,6 +2,11 @@ const { Sticker, StickerTypes } = require('wa-sticker-formatter');
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * Membuat stiker dari gambar
+ * @param {string} imagePath - Path file gambar
+ * @returns {Promise<Buffer|null>} Buffer stiker atau null jika gagal
+ */
 const createStickerFromImage = async (imagePath) => {
   try {
     console.log('Creating sticker from image:', imagePath);

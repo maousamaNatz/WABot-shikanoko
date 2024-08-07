@@ -4,7 +4,15 @@ const axios = require('axios');
 const xlsx = require('xlsx');
 const fs = require('fs');
 const path = require('path');
+const logMessages = require('../config/log.json');
 
+/**
+ * Menangani perintah MAL (MyAnimeList)
+ * @param {Object} client - Objek klien WhatsApp
+ * @param {Object} message - Objek pesan
+ * @param {string} command - Perintah yang diterima
+ * @returns {Promise<void>}
+ */
 const handleMalCommand = async (client, message, command) => {
   try {
     const baseUrl = "https://api.jikan.moe/v4";
@@ -72,8 +80,8 @@ const handleMalCommand = async (client, message, command) => {
       await client.sendText(message.from, response);
     }
   } catch (error) {
-    console.error('Error handling MAL command:', error);
-    await client.sendText(message.from, 'Maaf, terjadi kesalahan saat memproses permintaan Anda.');
+    console.error(logMessages.errors.malError);
+    await client.sendText(message.from, logMessages.errors.malError);
   }
 };
 
