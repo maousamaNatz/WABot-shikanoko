@@ -20,7 +20,15 @@ Shika Senbei dilengkapi dengan berbagai fitur yang memungkinkan pengguna untuk:
 - Mengelola anggota grup dengan mudah.
 - Menandai semua anggota grup dengan `@everyone`.
 - Menyembunyikan daftar anggota yang ditandai dengan fitur `./hidetag`.
-
+- Mengedit profil bot termasuk gambar profil dengan fitur `./edit-profile-bot`.
+- Membuat grup baru dengan fitur `./create-group`.
+- Mendapatkan informasi grup dengan fitur `./get-group`.
+- Mengubah grup menjadi privat dengan fitur `./private-group`.
+- Mendapatkan daftar semua anggota grup dengan fitur `./get-all-member`.
+- Mendapatkan daftar semua grup dengan fitur `./all-group`.
+- Mengaktifkan proteksi link dengan fitur `./active-protection-links`.
+- Mengaktifkan proteksi virtext dengan fitur `./active-protection-virtext`.
+- Menambahkan admin ke grup dengan fitur `./add-admin-group`.
 
 ## 🔗 Links
 - [Repository](https://github.com/maousamaNatz/shika-senbei)
@@ -52,27 +60,6 @@ Ikuti langkah-langkah di bawah ini untuk menginstal Shika Senbei:
 
 | Feature            | Status      | Description                                                                                   |
 |--------------------|-------------|-----------------------------------------------------------------------------------------------|
-| `./sticker`        | Implemented | Mengubah gambar menjadi stiker.                                                               |
-| `@everyone`        | Implemented | Menandai semua anggota grup.                                                                  |
-| `./more-info`      | Implemented | Memberikan informasi terperinci tentang bot.                                                  |
-| `./hidetag`        | Implemented | Menandai anggota grup tanpa menampilkan daftar yang ditandai.                                 |
-| `./profile`        | Implemented | Menampilkan profil pengguna.                                                                  |
-| `./changelog`      | Implemented | Menampilkan log perubahan terbaru.                                                            |
-| `getGroupMembers`  | Implemented | Mendapatkan daftar anggota grup.                                                              |
-| `getGroupAdmins`   | Implemented | Mendapatkan daftar admin grup.                                                                |
-| Auto-reply         | Planned     | Membalas pesan secara otomatis berdasarkan kata kunci tertentu.                               |
-| Scheduled Messages | Planned     | Mengirim pesan terjadwal ke grup atau kontak tertentu.                                        |
-| Welcome Message    | Planned     | Mengirim pesan sambutan otomatis kepada anggota baru.                                         |
-| `./kick`           | Planned     | Mengeluarkan anggota dari grup.                                                               |
-| `./ban`            | Planned     | Memblokir anggota dari grup.                                                                  |
-| `./unban`          | Planned     | Membuka blokir anggota dari grup.                                                             |
-| Custom Commands    | Planned     | Membuat dan mengelola perintah khusus yang dapat dijalankan oleh bot.                         |
-| Bug Fixing         | In Progress | Memperbaiki bug yang terkait dengan fitur `./hidetag` yang tidak berfungsi pada beberapa grup. |
-
-# Features Table
-
-| Feature            | Status      | Description                                                                                   |
-|--------------------|-------------|-----------------------------------------------------------------------------------------------|
 | `./sticker`        | ✔ Implemented | Mengubah gambar menjadi stiker.                                                               |
 | `@everyone`        | ✔ Implemented | Menandai semua anggota grup.                                                                  |
 | `./more-info`      | ✔ Implemented | Memberikan informasi terperinci tentang bot.                                                  |
@@ -84,13 +71,20 @@ Ikuti langkah-langkah di bawah ini untuk menginstal Shika Senbei:
 | Auto-reply         | 🔜 Planned     | Membalas pesan secara otomatis berdasarkan kata kunci tertentu.                               |
 | Scheduled Messages | 🔜 Planned     | Mengirim pesan terjadwal ke grup atau kontak tertentu.                                        |
 | Welcome Message    | 🔜 Planned     | Mengirim pesan sambutan otomatis kepada anggota baru.                                         |
-| `./kick`           | 🔜 Planned     | Mengeluarkan anggota dari grup.                                                               |
+| `./kick`           | ✔ Implemented | Mengeluarkan anggota dari grup.                                                               |
 | `./ban`            | 🔜 Planned     | Memblokir anggota dari grup.                                                                  |
 | `./unban`          | 🔜 Planned     | Membuka blokir anggota dari grup.                                                             |
 | Custom Commands    | 🔜 Planned     | Membuat dan mengelola perintah khusus yang dapat dijalankan oleh bot.                         |
 | Bug Fixing         | 🛠 In Progress | Memperbaiki bug yang terkait dengan fitur `./hidetag` yang tidak berfungsi pada beberapa grup. |
-
-
+| `./edit-profile-bot` | ✔ Implemented | Mengedit profil bot termasuk gambar profil.                                                   |
+| `./create-group`   | ✔ Implemented | Membuat grup baru.                                                                            |
+| `./get-group`      | ✔ Implemented | Mendapatkan informasi grup.                                                                   |
+| `./private-group`  | ✔ Implemented | Mengubah grup menjadi privat.                                                                 |
+| `./get-all-member` | ✔ Implemented | Mendapatkan daftar semua anggota grup.                                                        |
+| `./all-group`      | ✔ Implemented | Mendapatkan daftar semua grup.                                                                |
+| `./active-protection-links` | ✔ Implemented | Mengaktifkan proteksi link.                                                                  |
+| `./active-protection-virtext` | ✔ Implemented | Mengaktifkan proteksi virtext.                                                               |
+| `./add-admin-group` | ✔ Implemented | Menambahkan admin ke grup.                                                                   |
 
 ## License
 
